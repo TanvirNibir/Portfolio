@@ -40,3 +40,6 @@ lerna-debug.log*
 # Vite
 .vite
 
+# OS
+.DS_Store
+Thumbs.db
