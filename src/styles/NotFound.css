@@ -1,0 +1,74 @@
+.notFound {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #0f0f0f;
+}
+
+.notFoundContainer {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.notFoundContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.notFoundTitle {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #8b5cf6;
+  line-height: 1;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .notFoundTitle {
+    font-size: 12rem;
+  }
+}
+
+.notFoundSubtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .notFoundSubtitle {
+    font-size: 2.5rem;
+  }
+}
+
+.notFoundDescription {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.notFoundButton {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background-color: #8b5cf6;
+  color: #0f0f0f;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.notFoundButton:hover {
+  background-color: #a78bfa;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(139, 92, 246, 0.3);
+}
+

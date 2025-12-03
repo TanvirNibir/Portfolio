@@ -1,0 +1,206 @@
+.tools {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .tools {
+    padding: 8rem 0;
+    min-height: 90vh;
+  }
+}
+
+.toolsContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .toolsContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .toolsContainer {
+    padding: 0 2rem;
+  }
+}
+
+.toolsHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.toolsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f3f4f6; /* gray-100 */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .toolsTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .toolsTitle {
+    font-size: 3rem;
+  }
+}
+
+.toolsGrid {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .toolsGrid {
+    min-height: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .toolsGrid {
+    min-height: 800px;
+  }
+}
+
+.toolIcon {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toolCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+  border: 2px solid rgba(139, 92, 246, 0.3); /* primary-500 with opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.toolCircle::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.toolIcon:hover .toolCircle::before {
+  opacity: 1;
+}
+
+.toolIcon:hover .toolCircle {
+  border-color: rgba(139, 92, 246, 0.6); /* primary-500 */
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+  background: linear-gradient(135deg, #3a3a3a 0%, #4a4a4a 100%);
+  transform: translateY(-5px);
+}
+
+.toolName {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #c4b5fd; /* primary-200 */
+  text-align: center;
+  padding: 0.25rem;
+  line-height: 1.2;
+  z-index: 1;
+  position: relative;
+  word-break: break-word;
+}
+
+@media (min-width: 640px) {
+  .toolCircle {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .toolName {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .toolCircle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .toolName {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .toolCircle {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .toolName {
+    font-size: 1.125rem;
+  }
+}
+
+/* Animation for floating effect */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.toolIcon:nth-child(odd) {
+  animation: float 6s ease-in-out infinite;
+}
+
+.toolIcon:nth-child(even) {
+  animation: float 8s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+  .toolsGrid {
+    min-height: 500px;
+  }
+  
+  .toolCircle {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .toolName {
+    font-size: 0.7rem;
+  }
+  
+  .toolIcon {
+    /* Adjust positions for mobile */
+  }
+}
+

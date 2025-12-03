@@ -1,0 +1,158 @@
+.introSection {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
+}
+
+@media (min-width: 768px) {
+  .introSection {
+    padding: 8rem 0;
+  }
+}
+
+.introContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .introContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introContainer {
+    padding: 0 2rem;
+  }
+}
+
+.introContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.introTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #e5e7eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+@media (min-width: 768px) {
+  .introTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introTitle {
+    font-size: 3.75rem;
+  }
+}
+
+.introDescription {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .introDescription {
+    font-size: 1.25rem;
+  }
+}
+
+.introFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.introFeature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 0.5rem;
+  color: #c4b5fd;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.introFeatureIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #8b5cf6;
+  flex-shrink: 0;
+}
+
+.introActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.introButtonPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 100%);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1rem;
+  box-shadow: 
+    0 10px 25px rgba(124, 58, 237, 0.4),
+    0 0 0 0 rgba(124, 58, 237, 0);
+}
+
+.introButtonPrimary:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+  transform: translateY(-3px);
+  box-shadow: 
+    0 15px 35px rgba(124, 58, 237, 0.5),
+    0 0 0 4px rgba(124, 58, 237, 0.1);
+  gap: 1rem;
+}
+
+.introButtonSecondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #8b5cf6;
+  text-decoration: none;
+  border: 2px solid #8b5cf6;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.introButtonSecondary:hover {
+  background-color: rgba(139, 92, 246, 0.1);
+  border-color: #a78bfa;
+  color: #a78bfa;
+  transform: translateY(-2px);
+}
+
